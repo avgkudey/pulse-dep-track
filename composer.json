@@ -1,0 +1,58 @@
+{
+    "name": "avgkudey/pulse-dep-track",
+    "description": "Simple outdated dependency checker for laravel pulse dashboard",
+    "keywords": [
+        "avgkudey",
+        "pulse-dep-track"
+    ],
+    "homepage": "https://github.com/avgkudey/pulse-dep-track",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "avgkudey",
+            "email": "contact.avgkudey@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "illuminate/support": "*",
+        "laravel/pulse": "^1.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0",
+        "laravel/pint": "^1.0",
+        "spatie/ray": "^1.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "Avgkudey\\PulseDepTrack\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Avgkudey\\PulseDepTrack\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Avgkudey\\PulseDepTrack\\PulseDepTrackServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+            "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
