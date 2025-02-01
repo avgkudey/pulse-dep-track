@@ -55,6 +55,14 @@ Schedule::daily()
 
 ```
 
+### Add to pulse Dashboard
+
+```php
+    <livewire:deptrack.composer-outdated cols="full"/>
+    
+    <livewire:deptrack.npm-outdated cols="full"/>
+
+```
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
